@@ -5,9 +5,9 @@ import auth from "../middleware/auth.js";
 
 const router = express.Router();
 
-// router.patch("/post/:id", auth, postAnswer);
-router.patch("/post/:id",postAnswer);
-// router.patch("/delete/:id", auth, deleteAnswer);
-router.patch("/delete/:id", deleteAnswer);
+// router.patch("/post/:id",postAnswer);
+router.patch("/post/:id", auth, postAnswer);
+router.patch("/delete/:id", auth, deleteAnswer);
+// router.patch("/delete/:id", deleteAnswer);
 
 export default router;

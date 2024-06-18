@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "heroku-prebuild": "cd server && npm install && npm run build",
-    "start": "cd server && npm start",
+    
+    "start": "node index.js",
     "dev": "nodemon index.js"
   },
   "author": "Abhishek",
